@@ -1,0 +1,1172 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Mostra UCL</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+
+		<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>-->
+		<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.3.js"></script>
+		<script>
+			var $doc = $('html, body');
+			$('a').click(function() {
+				$doc.animate({
+					scrollTop: $( $.attr(this, 'href') ).offset().top
+				}, 500);
+				return false;
+			});
+		</script>
+
+		<script>
+			$(document).ready(function(){
+				/* CADASTRO */
+				$(".cadastro").hide();
+
+				$("#show-empresa").click(function(){
+					$(".cadastro").hide();
+					$("#div-empresa").show();
+					$('.cadastro-link').removeClass('special');
+					$('#show-empresa').addClass('special');
+				});
+
+				$("#show-instituicao").click(function(){
+					$(".cadastro").hide();
+					$("#div-instituicao").show();
+					$('.cadastro-link').removeClass('special');
+					$('#show-instituicao').addClass('special');
+				});
+
+				$("#show-visitante").click(function(){
+					$(".cadastro").hide();
+					$("#div-visitante").show();
+					$('.cadastro-link').removeClass('special');
+					$('#show-visitante').addClass('special');
+				});
+
+				$("#show-aluno").click(function(){
+					$(".cadastro").hide();
+					$("#div-aluno").show();
+					$('.cadastro-link').removeClass('special');
+					$('#show-aluno').addClass('special');
+				});
+
+
+				/* AGENDA */
+
+				$("#academica7").hide();
+				$("#cultura7").hide();
+				$("#competicao7").hide();
+				$("#negocios7").hide();
+				$("#kids7").hide();
+
+				$("#show-cultura6").click(function(){
+					$("#cultura7").hide();
+					$("#cultura6").show();
+					$('#show-cultura6').addClass('special');
+					$('#show-cultura7').removeClass('special');
+				});
+
+				$("#show-cultura7").click(function(){
+					$("#cultura6").hide();
+					$("#cultura7").show();
+					$('#show-cultura7').addClass('special');
+					$('#show-cultura6').removeClass('special');
+				});
+
+
+				$("#show-academica6").click(function(){
+					$("#academica7").hide();
+					$("#academica6").show();
+					$('#show-academica6').addClass('special');
+					$('#show-academica7').removeClass('special');
+				});
+
+				$("#show-academica7").click(function(){
+					$("#academica6").hide();
+					$("#academica7").show();
+					$('#show-academica7').addClass('special');
+					$('#show-academica6').removeClass('special');
+				});
+
+				$("#show-negocios6").click(function(){
+					$("#negocios7").hide();
+					$("#negocios6").show();
+					$('#show-negocios6').addClass('special');
+					$('#show-negocios7').removeClass('special');
+				});
+
+				$("#show-negocios7").click(function(){
+					$("#negocios6").hide();
+					$("#negocios7").show();
+					$('#show-negocios7').addClass('special');
+					$('#show-negocios6').removeClass('special');
+				});
+
+				$("#show-competicao6").click(function(){
+					$("#competicao7").hide();
+					$("#competicao6").show();
+					$('#show-competicao6').addClass('special');
+					$('#show-competicao7').removeClass('special');
+				});
+
+				$("#show-competicao7").click(function(){
+					$("#competicao6").hide();
+					$("#competicao7").show();
+					$('#show-competicao7').addClass('special');
+					$('#show-competicao6').removeClass('special');
+				});
+
+
+				$("#show-kids6").click(function(){
+					$("#kids7").hide();
+					$("#kids6").show();
+					$('#show-kids6').addClass('special');
+					$('#show-kids7').removeClass('special');
+				});
+
+				$("#show-kids7").click(function(){
+					$("#kids6").hide();
+					$("#kids7").show();
+					$('#show-kids7').addClass('special');
+					$('#show-kids6').removeClass('special');
+				});
+
+
+				$("#show-arena-cultura").click(function(){
+					$("#show-arena-cultura").hide();
+					$("#arena-cultura").show();
+				});
+
+				$("#show-arena-negocios").click(function(){
+					$("#show-arena-negocios").hide();
+					$("#arena-negocios").show();
+				});
+
+				$("#show-arena-academica").click(function(){
+					$("#show-arena-academica").hide();
+					$("#arena-academica").show();
+				});
+
+				$("#show-arena-competicao").click(function(){
+					$("#show-arena-competicao").hide();
+					$("#arena-competicao").show();
+				});
+
+				$("#show-arena-kids").click(function(){
+					$("#show-arena-kids").hide();
+					$("#arena-kids").show();
+				});
+
+
+
+			});
+		</script>
+
+	</head>
+	<body>
+		<!-- Link Ancoras -->
+
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<h1><a href="index.html"><img class="logo-peq" src="images/logo_peq.png" alt="" /></a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="#7mostra">7ª Mostra UCL</a></li>
+								<li><a href="#uclgo">UCL GO!</a></li>
+								<li><a href="#agenda">Agenda</a></li>
+								<li><a href="#arenas">Arenas</a></li>
+								<li><a href="#parceiros">Parceiros</a></li>
+								<li><a href="#mapa">Mapa do Evento</a></li>
+								<li><a href="#contato">Contato</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Banner -->
+					<section id="banner">
+						<div class="inner">
+							<div class="row">
+								<div class="8u logo"><img src="images/logo.png" alt="" /></span></div>
+								<div class="4u$"><a href="#agenda" class="button">CONFIRA A PROGRAMAÇÃO</a></div>
+							</div>
+
+							<h2>7ª Mostra UCL<br>06 e 07 de Outubro - 2017</h2>
+							<p>5 grandes eventos unidos num local único.<br>
+								20 horas com muito conhecimento e diversão rolando soltos.<br>
+								2 dias especiais abertos ao público.</p>
+						</div>
+					</section>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<section id="four" class="wrapper style1">
+							<div class="inner">
+								<h2 class="major">O que é a Mostra UCL de Inovação?</h2>
+								<p>É um evento da Faculdade  UCL que busca promover aos seus alunos e demais participantes o  enlace com a sociedade, compreendendo a educação como formação de valores, empoderamento e  compartilhamento de conhecimento.</p>
+								<section class="features">
+									<article>
+										<h3 class="major">Veja no vídeo o quanto você pode fazer neste evento!</h3>
+										<div class="container">
+										<iframe src="https://www.youtube.com/embed/EO_6jF-vsdc?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen class="video"></iframe>
+										</div>
+										<h3 class="major"></h3>
+										<p>Ficou interessado?</p>
+										<ul class="actions">
+											<li><a href="https://goo.gl/forms/DLWRiHJ6I5TvczAO2" target="_blank" class="button">Faça sua pré-inscrição</a></li>
+										</ul>
+									</article>
+
+									<article>
+										<h3 class="major">Como foi a Mostra UCL 2016</h3>
+										<p>O público aprovou as palestras e se divertiu nas tendas montadas no campus, onde foram expostos trabalhos desenvolvidos por estudantes da Faculdade.</p>
+										<p>Todos os palestrantes compartilharam suas experiências de sucesso, agregando valor ao tema da mostra, que, no ano de 2016, foi Empreendedorismo. Um dos destaques foi a participação da empresária Ada Mota, fundadora da Adcos. Quem não estava presente teve a chance de assistir à transmissão online, que agora está disponível no canal da UCL no Youtube.</p>
+										<a href="https://www.ucl.br/mostra-ucl-2016-mais-um-evento-de-sucesso-realizado-por-alunos-e-funcionarios/" target="_blank" class="special">Veja como foi</a>
+									</article>
+
+								</section>
+							</div>
+						</section>
+
+						<section id="7mostra" class="wrapper alt style3">
+							<div class="inner">
+								<h2 class="major">7º Mostra UCL</h2>
+								<p>É um evento da Faculdade  UCL que busca promover aos seus alunos e demais participantes o  enlace com a sociedade, compreendendo a educação como formação de valores, empoderamento e  compartilhamento de conhecimento.</p>
+								<section class="features">
+
+									<article>
+										<h3 class="major">O que há de novo na 7º Mostra UCL?</h3>
+										<p>É  uma edição que apresenta uma proposta inovadora de participação onde o participante é  convidado a se envolver em um ambiente de conhecimento colaborativo e sem fronteiras. Trata-se de um evento configurado em arenas criativas onde os participantes poderão vivenciar,  explorar e se encantar com  novas descobertas.</p>
+										<h3>Quando e onde vai acontecer?</h3>
+										<p>O evento acontecerá nos dias 06 e 07 de outubro na Faculdade UCL - Campus de Manguinhos, das 08 às 22 horas.</p>
+									</article>
+
+									<article>
+										<h3 class="major">Quais serão as atividades?</h3>
+										<p>A 7º Mostra UCL apresenta uma gama diversificada de atividades, envolvendo os participantes em competições, aprendizagem colaborativa e socialização de conhecimento. Para tanto o evento  foi  estruturado em quatro  arenas criativas. São elas:</p>
+										<div class="row">
+											<div class="12u$(medium)">
+												<ul>
+													<li><a href="#cultura">Arena Criativa da Cultura</a></li>
+													<li><a href="#negocios">Arena Criativa de Negócios</a></li>
+													<li><a href="#academica">Arena Criativa Acadêmica</a></li>
+													<li><a href="#competicao">Arena Criativa de Competições</a></li>
+													<li><a href="#kids">Arena Criativa Kids</a></li>
+												</ul>
+											</div>
+										</div>
+									</article>
+
+								</section>
+							</div>
+						</section>
+
+
+						<section id="uclgo" class="wrapper style1">
+							<div class="inner">
+								<h2 class="major">UCL GO!</h2>
+								<p>Para assegurar uma participação ativa e colaborativa, as atividades serão gerenciadas pelo aplicativo UCL GO!, uma ferramenta desenvolvida por pesquisadores e alunos da instituição que permitirá aos participantes interagirem com o evento a cada momento, a cada instante em qualquer lugar. O aplicativo pontuará o participante de acordo com sua interação na mostra e iniciará um ranking em três segmentos distintos: empresas, instituições de ensino e visitantes.</p>
+								<p>Haverá premiações para os três primeiros vencedores das categorias de instituições de ensino e empresas. Também serão premiados os 20 primeiros participantes do ranking.</p>
+								<h3>Como me cadastro no UCL GO! ?</h3>
+
+
+								<div align="center">
+								<ul class="actions">
+									<li><button class="cadastro-link" id="show-empresa">Empresa</button></li>
+									<li><button class="cadastro-link" id="show-instituicao">Instituição</button></li>
+									<li><button class="cadastro-link" id="show-visitante">Visitante</button></li>
+									<li><button class="cadastro-link" id="show-aluno">Aluno UCL</button></li>
+								</ul>
+								</div>
+
+								<div id="div-empresa" class="row cadastro">
+									<p><strong>EMPRESA</strong><br>Siga os passos abaixo para que sua empresa possa participar da competição da Mostra UCL.</p>
+									<div class="12u$(medium)">
+										<ol class="alt">
+											<li>Cadastre-se no link: https://www.victoryisland.com.br/</li>
+											<li>Cadastre o e-mail de seus funcionários e convide-os a participar.</li>
+											<li>Peça que os funcionários e representantes da empresa baixem os aplicativos para seus celulares e registrem-se.</li>
+											<li>Executem as atividades que estão em seus aplicativos e incentivem a participação no evento.</li>
+										</ol>
+									</div>
+								</div>
+
+								<div id="div-instituicao" class="row cadastro">
+									<p><strong>INSTITUIÇÃO</strong><br>Siga os passos abaixo para que sua instituição possa participar da competição da Mostra UCL.</p>
+									<div class="12u$(medium)">
+										<ol>
+											<li>Cadastre-se no link : https://www.victoryisland.com.br/</li>
+											<li>Cadastre o e-mail de seus professores, alunos,  funcionários e convide-os a participar.</li>
+											<li>Peça que eles baixem os aplicativos para seus celulares e registrem-se.</li>
+											<li>Executem as atividades que estão em seus aplicativos e incentivem a participação no evento.</li>
+										</ol>
+									</div>
+								</div>
+
+								<div id="div-visitante" class="row cadastro">
+									<p><strong>VISITANTE</strong><br>Siga os passos abaixo para que você possa participar da competição da Mostra UCL.</p>
+									<div class="12u$(medium)">
+										<ol>
+											<li>Faça o download do aplicativo através dos links abaixo.</li>
+											<li>Execute o aplicativo e faça seu cadastro.</li>
+											<li>Selecione a opção "Visitante", sua instituição se ensino e/ou empresa.*</li>
+											<li>Execute as atividades que estão aparecendo em seu aplicativo e participe do evento.</li>
+										</ol>
+										<em>*Caso sua instituição de ensino ou empresa não esteja cadastrada, peça para que um representante legal a cadastre. Caso não possua, marque a opção "Não possuo".</em>
+									</div>
+								</div>
+
+								<div id="div-aluno" class="row cadastro">
+									<p><strong>ALUNO UCL</strong><br>Siga os passos abaixo para que você possa participar da competição da Mostra UCL.</p>
+									<div class="12u$(medium)">
+										<ol>
+											<li>Faça o download do aplicativo através dos links abaixo.</li>
+											<li>Execute o aplicativo e faça seu cadastro.</li>
+											<li>Selecione a opção "Aluno UCL" e sua empresa*</li>
+											<li>Execute as atividades que estão aparecendo em seu aplicativo e participe do evento.</li>
+										</ol>
+										<em>*Caso sua empresa não esteja cadastrada, peça para que um representante legal a cadastre. Caso não possua, marque a opção "Não possuo".</em>
+									</div>
+								</div>
+
+								<h3>EM BREVE NA LOJA DE APLICATIVOS DO SEU SMARTPHONE</h3>
+								<div class="box alt">
+									<div class="row uniform store">
+										<!--
+										<div class="4u"><a href="#"><span class="image fit"><img src="images/app_store.png"></span></a></div>
+										<div class="4u"><a href="#"><span class="image fit"><img src="images/google_play.png"></span></a></div>
+										<div class="4u$"><a href="#"><span class="image fit"><img src="images/windows_store.png"></span></a></div>
+										-->
+										<div class="4u"><span class="image fit"><img src="images/app_store.png"></span></div>
+										<div class="4u"><span class="image fit"><img src="images/google_play.png"></span></div>
+										<div class="4u$"><span class="image fit"><img src="images/windows_store.png"></span></div>
+									</div>
+								</div>
+
+								<h3>Como funcionará a pontuação?</h3>
+
+								<p>A pontuação será obtida pelos alunos, professores, funcionários e visitantes das várias instituições de ensino e empresas, através da execução das tarefas listadas no UCL GO! e através da participação na Mostra UCL. A pontuação destas atividades será contabilizada para o individuo e para sua instituição de ensino e/ou empresa. Exemplos de tarefas seguem abaixo:</p>
+								<p>????????</p>
+
+							</div>
+						</section>
+
+
+
+						<!-- One -->
+
+							<section id="arenas" class="wrapper alt spotlight style1">
+								<div id="cultura" class="inner">
+									<a href="#" class="image"><img src="images/cultura.jpg" alt="" /></a>
+									<div class="content">
+										<h2 class="major">Arena Criativa da Cultura</h2>
+										<p>Arena Criativa da Cultura é uma oportunidade de ver , conhecer e vivenciar diferentes culturas que estão presentes no Espírito Santo através da batalhas de bandas, Bazar, apresentação de artes marciais, de dança e feira de food trucks. Também é um momento para melhorar a saúde através de momentos de ginástica funcional.</p>
+										<p>Tudo isso enquanto você aproveita o conhecimento, as competições e os negócios.</p>
+										<button id="show-arena-cultura" class="">Saiba mais</button>
+
+										<div id="arena-cultura" style="display: none;">
+											<hr>
+											<h3>Workshop de Artes Marciais</h3>
+											<p>Nosso estado possuí uma gama de práticas físicas, dentre estas existem as Artes Marciais.</p>
+
+											<hr>
+											<h3>Feira de Food Trucks</h3>
+											<p>Que tal experimentar algo diferente? Para isso estamos trazendo food trucks de vários tipos diferentes, permitindo você escolher e degustar novos tipos de comida.</p>
+
+											<hr>
+											<h3>Workshop de Dança</h3>
+											<p>Quer aprender a dançar? Aqui você poderá mexer o esqueleto.</p>
+
+											<hr>
+											<h3>Batalha de Bandas</h3>
+											<p>Muita música boa está por vir!</p>
+											<a href="https://goo.gl/forms/auvVUiqI7yUr3aRu2" class="button" target="_blank">Faça sua Inscrição para a Batalha de Bandas</a>
+
+											<hr>
+											<h3>Agenda</h3>
+											<a href="#agenda-cultura" class="special">Confira a programação da Arena Criativa da Cultura</a>
+										</div>
+									</div>
+								</div>
+							</section>
+
+						<!-- Two -->
+							<section id="two" class="wrapper spotlight style2">
+								<div id="negocios" name="negocios" class="inner">
+									<a href="#" class="image"><img src="images/negocios.jpg" alt="" /></a>
+									<div class="content">
+										<h2 class="major">Arena Criativa de Negócios</h2>
+										<p>A Arena Criativa de Negócios é uma área para empresas que desejam se aproximar de seus clientes e fazer parcerias com outras empresas. Esta Arena contempla atividades de empreendedorismo, rodadas de negócios, exposição de produtos, serviços, atividades para aprimorar sua equipe e a forma de encarar problemas.</p>
+										<p>De forma criativa, cativante e marcante é uma grande oportunidade que nenhum empresário gostaria de perder!</p>
+										<button id="show-arena-negocios" class="">Saiba mais</button>
+
+										<div id="arena-negocios" style="display: none;">
+											<hr>
+											<h3>Bazar</h3>
+											<p>Está com alguma coisa parada em casa? Que tal desapegar?</p>
+
+											<hr>
+											<h3>Café com Negócios</h3>
+											<p>Aproveite este momento para empreender mais e ampliar seus negócios, enquanto desfruta daquele cafézinho.</p>
+
+											<hr>
+											<h3>Troca de Cartões</h3>
+											<p>Se você tem soluções, algém possuí necessidades. Que tal juntar ambos num encontro só?</p>
+
+											<hr>
+											<h3>Pré-cadastro de Empresas</h3>
+											<a href="https://goo.gl/forms/rVLE9wTbiBDCbNH22" class="button" target="_blank">Faça a pré-inscrição da sua Empresa ou Instituição de Ensino.</a>
+
+											<hr>
+											<h3>Agenda</h3>
+											<a href="#agenda-negocios" class="special">Confira a programação da Arena Criativa de Negócios</a>
+										</div>
+									</div>
+								</div>
+							</section>
+
+						<!-- Three -->
+
+						<section id="three" class="wrapper alt spotlight style3">
+							<div id="competicao" class="inner">
+								<a href="#" class="image"><img src="images/competicao.jpg" alt="" /></a>
+								<div class="content">
+									<h2 class="major">Arena Criativa de Competições</h2>
+									<p>A Arena Criativa de Competições é uma área onde escolas podem trazer seus alunos e suas pesquisas para serem expostas e testadas. Também um espaço para instigar os participantes da Mostra de Inovação UCL a desafiarem seus conhecimentos em atividades variadas como desafios envolvendo robótica, esportes eletrônicos, competições Maker,  entre outros.</p>
+									<p>Com o intuito de tornar o conhecimento de forma prática e divertida, desafiamos você a deixar sua marca neste evento.</p>
+									<button id="show-arena-competicao" class="">Saiba mais</button>
+
+									<div id="arena-competicao" style="display: none;">
+										<hr>
+										<h3>Competições e Regras</h3>
+
+										<h4>Feira Competitiva de Ciências</h4>
+										<ol class="alt">
+											<li>Escolha um projeto que você fez para a feira de ciências ou que gostaria de mostrar.</li>
+											<li>Junte seus colegas (no máximo 3)</li>
+											<li>Encontre um professor para lhe(s) orientar.(Com no mínimo 21 anos de idade)</li>
+											<li>Registre-se no evento</li>
+											<li>Venha expor seu projeto na Mostra UCL e mostrar que você vai além!</li>
+										</ol>
+										<h4>OBS.: Não esqueça de ler as regras <a href="https://docs.google.com/a/ucl.br/document/d/1zw2plwh5g2vesvSVZDxjbpB8pJihR1fSNVaPcnwmDcI/edit?usp=sharing" target="_blank">AQUI!</a></h4>
+										<hr>
+										<h4>Robotic Race</h4>
+										<ol class="alt">
+											<li>Forme uma equipe com 2 até 4 colegas. (que estejam no ensino fundamental, médio ou técnico)</li>
+											<li>Encontre um professor ou técnico para orientar sua equipe</li>
+											<li>Monte seu Robô</li>
+											<li>Venha e participe da competição!</li>
+										</ol>
+										<h4>OBS.: Não esqueça de ler as regras <a href="https://docs.google.com/a/ucl.br/document/d/1ykBoSAp1ueI6rGt3Lx8I4RPIJOO1RmvR7ugK2SdX-mQ/edit?usp=sharing" target="_blank">AQUI!</a></h4>
+
+										<hr>
+										<h4>E- Sports</h4>
+										<ol class="alt">
+											<li>Forme um time (todos devem ser estudantes).</li>
+											<li>Escolha alguns reservas e um técnico (maior de idade).</li>
+											<li>Registre-se no evento.</li>
+											<li>Venha competir e se divertir!</li>
+										</ol>
+										<h4>OBS.: Não esqueça de ler as regras <a href="https://docs.google.com/a/ucl.br/document/d/1zw2plwh5g2vesvSVZDxjbpB8pJihR1fSNVaPcnwmDcI/edit?usp=sharing" target="_blank">AQUI!</a></h4>
+
+
+										<hr>
+										<h3>Pré-cadastro de instituições de ensino</h3>
+										<a href="https://goo.gl/forms/rVLE9wTbiBDCbNH22" class="button" target="_blank">Faça a pré-inscrição da sua Instituição de Ensino.</a>
+
+
+										<hr>
+										<h3>Agenda</h3>
+										<a href="#agenda-competicao" class="special">Arena Criativa de Competições</a>
+									</div>
+								</div>
+							</div>
+						</section>
+
+
+						<!-- Four -->
+						<section id="four" class="wrapper spotlight style1">
+							<div id="academica" class="inner">
+								<a href="#" class="image"><img src="images/academico.jpg" alt="" /></a>
+								<div class="content">
+									<h2 class="major">Arena Criativa Acadêmica</h2>
+									<p>A Arena Criativa Acadêmica abarca projetos de alunos e pesquisadores da instituição, entre eles projetos integradores, projetos e jornada de iniciação científica, palestras, workshops e uma ala Kids com projetos de responsabilidade social.</p>
+									<button id="show-arena-academica" class="">Saiba mais</button>
+
+									<div id="arena-academica" style="display: none;">
+										<hr>
+										<h3>Jornada de Iniciação Científica</h3>
+										<p>Parte importante da tenda acadêmica onde os alunos apresentarão o resultado de suas pesquisas ao público.</p>
+
+										<hr>
+										<h3>Projetos Interdisciplinares</h3>
+										<p>Uma área com vários projetos desenvolvidos pelos alunos durante os vários cursos da UCL. Abrangem as áreas de engenharias, design, sistemas de informação e muitas outras.</p>
+
+										<hr>
+										<h3>Agenda</h3>
+										<a href="#agenda-academica" class="special">Confira a programação da Arena Criativa Acadêmica</a>
+									</div>
+								</div>
+							</div>
+						</section>
+
+						<!-- Five -->
+
+							<section id="five" class="wrapper alt spotlight style5">
+								<div id="kids" class="inner">
+									<a href="#" class="image"><img src="images/kids.jpg" alt="" /></a>
+									<div class="content">
+										<h2 class="major">Arena Criativa Kids</h2>
+										<p>A Arena Kids é um espaço que busca oportunizar às crianças participantes da 7ª Mostra UCL,  o contato com brinquedos terapêuticos  que estimulam o desenvolvimento cognitivo e motor. Além disso, as crianças poderão explorar o mundo da leitura por meio da exposição de livros infantis, bem como exercitar a responsabilidade social no cantinho do projeto siri cascudo, um projeto que explora o reaproveitamento de resíduos pesqueiros.</p>
+										<button id="show-arena-kids" class="">Saiba mais</button>
+
+										<div id="arena-kids" style="display: none;">
+											<hr>
+											<h3>Brinquedos Terapeuticos</h3>
+
+											<ul>
+												<li>Robô esférico</li>
+												<li>Quadro sensorial</li>
+												<li>Foguete automatizado</li>
+												<li>Trix Tracks</li>
+												<li>Ursinho terapêutico</li>
+												<li>Jogo da velha com braço robótico</li>
+											</ul>
+
+
+											<hr>
+											<h3>PROJETO SIRI CASCUDO</h3>
+
+											<hr>
+											<h3>LANÇAMENTO DO LIVRO BOOK TOUR</h3>
+
+											<hr>
+											<h3>EXPOSIÇÃO DE LIVROS INFANTIS</h3>
+
+											<hr>
+											<h3>BRINCADEIRAS E DESAFIOS DIVERTIDOS</h3>
+
+
+											<hr>
+											<h3>Agenda</h3>
+											<a href="#agenda-kids" class="special">Confira a programação da Arena Criativa Kids</a>
+
+
+									</div>
+								</div>
+							</section>
+
+						<!-- AGENDA -->
+
+						<section id="agenda" class="wrapper style5">
+							<div class="inner">
+								<h2 class="major">Agenda</h2>
+								<div class="table-wrapper">
+
+									<!-- ARENA CULTURAL -->
+
+									<h3 id="agenda-cultura"><span class="icon fa-music"></span> ARENA CULTURAL</h3>
+									<ul class="actions">
+										<li><button id="show-cultura6" class="button special small">Dia 6</button></li>
+										<li><button id="show-cultura7" class="button small">Dia 7</button></li>
+									</ul>
+
+									<table id="cultura6" class="alt">
+										<thead>
+										<tr>
+											<th width="65%">Atividade | Dia 6</th>
+											<th width="15%">Horário</th>
+											<th width="20%">Local</th>
+										</tr>
+										</thead>
+										<tbody>
+										<tr>
+											<td>Coral de Manguinhos</td>
+											<td>19h30min</td>
+											<td>Palco</td>
+										</tr>
+										<tr>
+											<td>Apresentação da Banda The professor</td>
+											<td>21 horas</td>
+											<td>Palco</td>
+										</tr>
+										<tr>
+											<td>Workshop de Dança de Salão</td>
+											<td>17 horas</td>
+											<td>Palco</td>
+										</tr>
+										<tr>
+											<td>Bazar 3R's</td>
+											<td>9 às 21 horas</td>
+											<td>Ala de Bazar</td>
+										</tr>
+										<tr>
+											<td>Workshop aikido</td>
+											<td>9 horas</td>
+											<td>Tablado</td>
+										</tr>
+										<tr>
+											<td>Workshop aikido</td>
+											<td>16 horas</td>
+											<td>Tablado</td>
+										</tr>
+										<tr>
+											<td>Food Trucks</td>
+											<td>9 às 22 horas</td>
+											<td>Ala Alimentação</td>
+										</tr>
+										<tr>
+											<td>Doação de Alimentos</td>
+											<td>9 às 21 horas</td>
+											<td>Stand de doação</td>
+										</tr>
+										</tbody>
+									</table>
+
+									<table id="cultura7" class="alt">
+										<thead>
+										<tr>
+											<th width="65%">Atividade | Dia 7</th>
+											<th width="15%">Horário</th>
+											<th width="20%">Local</th>
+										</tr>
+										</thead>
+										<tbody>
+										<tr>
+											<td>Batalha de Bandas</td>
+											<td>16 horas</td>
+											<td>Palco</td>
+										</tr>
+										<tr>
+											<td>Orquestra de Jazz da Vale (Aguardando confirmação)</td>
+											<td>15 horas</td>
+											<td>Palco</td>
+										</tr>
+										<tr>
+											<td>Workshop de Dança de Salão</td>
+											<td>13 horas</td>
+											<td>Palco</td>
+										</tr>
+										<tr>
+											<td>Bazar 3R's</td>
+											<td>9 às 21 horas</td>
+											<td>Ala de Bazar</td>
+										</tr>
+										<tr>
+											<td>Workshop aikido</td>
+											<td>9 horas</td>
+											<td>Tablado</td>
+										</tr>
+										<tr>
+											<td>Food Trucks</td>
+											<td>10 às 22 horas</td>
+											<td>Ala Alimentação</td>
+
+										</tr>
+										<tr>
+											<td>Doação de Alimentos</td>
+											<td>9 às 21 horas</td>
+											<td>Stand de doação</td>
+										</tr>
+										</tbody>
+									</table>
+
+									<!-- ARENA DE NEGÓCIOS -->
+
+									<h3 id="agenda-negocios"><span class="icon fa-handshake-o"></span> ARENA DE NEGÓCIOS</h3>
+									<ul class="actions">
+										<li><button id="show-negocios6" class="button special small">Dia 6</button></li>
+										<li><button id="show-negocios7" class="button small">Dia 7</button></li>
+									</ul>
+
+									<table id="negocios6" class="alt">
+										<thead>
+										<tr>
+											<th width="65%">Atividade | Dia 6</th>
+											<th width="15%">Horário</th>
+											<th width="20%">Local</th>
+										</tr>
+										</thead>
+										<tbody>
+										<tr>
+											<td>Exposição de Empresas</td>
+											<td>9 às 21 horas</td>
+											<td>Stands de Exposição</td>
+
+										</tr>
+										<tr>
+											<td>Workshop: Saindo da informalidade: Como criar o seu MEI (Micro Empreendedor Individual)</td>
+											<td>14 as 20 horas</td>
+											<td>Ala de Prestação de Serviços</td>
+										</tr>
+										<tr>
+											<td>Workshop: Como elaborar um bom currículo</td>
+											<td>14 às 20 horas</td>
+											<td>Ala de Prestação de Serviços</td>
+										</tr>
+										<tr>
+											<td>UCL Institucional - Stand informativo da Mostra UCL</td>
+											<td>9 às 21 horas</td>
+											<td>Ala de Prestação de Serviços</td>
+										</tr>
+										<tr>
+											<td>Pós Graduação - Aperfeiçoamento Profissional</td>
+											<td>9 às 21 horas</td>
+											<td>Ala de Prestação de Serviços</td>
+
+										</tr>
+										<tr>
+											<td>Café de Negócios</td>
+											<td>14 às 18 horas</td>
+											<td>Auditório</td>
+
+										</tr>
+										</tbody>
+									</table>
+
+									<table id="negocios7" class="alt">
+										<thead>
+										<tr>
+											<th width="65%">Atividade | Dia 7</th>
+											<th width="15%">Horário</th>
+											<th width="20%">Local</th>
+										</tr>
+										</thead>
+										<tbody>
+										<tr>
+											<td>Exposição de Empresas</td>
+											<td>9 às 21 horas</td>
+											<td>Stands de Exposição</td>
+										</tr>
+										<tr>
+											<td>Workshop: Saindo da informalidade: Como criar o seu MEI (Micro Empreendedor Individual)</td>
+											<td>9 às 15 horas</td>
+											<td>Ala de Prestação de Serviços</td>
+										</tr>
+										<tr>
+											<td>Workshop: Como elaborar um bom currículo</td>
+											<td>9 às 15 horas</td>
+											<td>Ala de Prestação de Serviços</td>
+										</tr>
+										<tr>
+											<td>UCL Institucional - Stand informativo da Mostra UCL</td>
+											<td>9 às 21 horas</td>
+											<td>Ala de Prestação de Serviços</td>
+										</tr>
+										<tr>
+											<td>Pós Graduação - Aperfeiçoamento Profissional</td>
+											<td>9 às 21 horas</td>
+											<td>Ala de Prestação de Serviços</td>
+										</tr>
+										</tbody>
+									</table>
+
+									<!-- ARENA ACADÊMICA -->
+
+									<h3 id="agenda-academica"><span class="icon fa-book"></span> ARENA ACADÊMICA</h3>
+									<ul class="actions">
+										<li><button id="show-academica6" class="button special small">Dia 6</button></li>
+										<li><button id="show-academica7" class="button small">Dia 7</button></li>
+									</ul>
+
+									<table id="academica6" class="alt">
+										<thead>
+										<tr>
+											<th width="65%">Atividade | Dia 6</th>
+											<th width="15%">Horário</th>
+											<th width="20%">Local</th>
+										</tr>
+										</thead>
+										<tbody>
+										<tr>
+											<td>Exposição de Projetos Interdisiciplinares de Engenharias</td>
+											<td>9 às 21 horas</td>
+											<td>Stands de Exposição</td>
+										</tr>
+										<tr>
+											<td>Exposição de Projetos Interdisciplinares: Arquitetura Religiosa</td>
+											<td>9 às 21 horas</td>
+											<td>Stands de Exposição</td>
+										</tr>
+										<tr>
+											<td>Exposição da Maquete: A Casa da Cascata</td>
+											<td>9 às 21 horas</td>
+											<td>Stands de Exposição</td>
+										</tr>
+										<tr>
+											<td>Exposição de Projetos Acadêmicos - Engenharia Civil</td>
+											<td>9 às 21 horas</td>
+											<td>Stands de Exposição</td>
+										</tr>
+										<tr>
+											<td>Exposição de Projetos Acadêmicos - Sistema de Informação e Análise e Desenvolvimento de Sistemas</td>
+											<td>9 às 21 horas</td>
+											<td>Stands de Exposição</td>
+										</tr>
+										<tr>
+											<td>Exposição de Projetos de Robótica</td>
+											<td>9 às 21 horas</td>
+											<td>Stands de Exposição</td>
+										</tr>
+										<tr>
+											<td>Jornada de Iniciação Científica</td>
+											<td>18h30min às 20h30min</td>
+											<td>Corredoresinferiores do Bloco Didático</td>
+										</tr>
+										<tr>
+											<td>Palestras</td>
+											<td>18h30min às 21 horas</td>
+											<td>Salas de Aula e Auditório</td>
+										</tr>
+										<tr>
+											<td>Worshop Astronomia</td>
+											<td>8 às 20 horas</td>
+											<td colspan=5>Área externa próximo ao
+												estacionamento alternativo</td>
+										</tr>
+										<tr>
+											<td>Workshop Energia e Inovação</td>
+											<td>14 às 20 horas</td>
+											<td>Laboratório de Química</td>
+										</tr>
+										<tr>
+											<td>Workshop: Saindo da informalidade: Como criar o seu MEI (Micro Empreendedor Individual)</td>
+											<td>14 às 20 horas</td>
+											<td>Ala de Prestação de Serviços</td>
+
+										</tr>
+										<tr>
+											<td>Workshop: Como elaborar um bom currículo</td>
+											<td>14 às 20 horas</td>
+											<td>Ala de Prestação de Serviços</td>
+										</tr>
+										</tbody>
+									</table>
+
+									<table id="academica7" class="alt">
+										<thead>
+										<tr>
+											<th width="65%">Atividade | Dia 7</th>
+											<th width="15%">Horário</th>
+											<th width="20%">Local</th>
+										</tr>
+										</thead>
+										<tbody>
+										<tr>
+											<td>Exposição de Projetos Interdisiciplinares de Engenharias</td>
+											<td>9 às 21 horas</td>
+											<td>Stands de Exposição</td>
+										</tr>
+										<tr>
+											<td>Exposição de Projetos Interdisciplinares: Arquitetura Religiosa</td>
+											<td>9 às 21 horas</td>
+											<td>Stands de Exposição</td>
+										</tr>
+										<tr>
+											<td>Exposição da Maquete: A Casa da Cascata</td>
+											<td>9 às 21 horas</td>
+											<td>Stands de Exposição</td>
+										</tr>
+										<tr>
+											<td>Exposição de Projetos Acadêmicos - Engenharia Civil</td>
+											<td>9 às 21 horas</td>
+											<td>Stands de Exposição</td>
+										</tr>
+										<tr>
+											<td>Exposição de Projetos Acadêmicos - Sistema de Informação e Análise e Desenvolvimento de Sistemas</td>
+											<td>9 às 21 horas</td>
+											<td>Stands de Exposição</td>
+										</tr>
+										<tr>
+											<td>Exposição de Projetos de Robótica</td>
+											<td>9 às 21 horas</td>
+											<td>Stands de Exposição</td>
+										</tr>
+										<tr>
+											<td>Worshop Astronomia</td>
+											<td>8 às 20 horas</td>
+											<td>Área externa próximo ao estacionamento alternativo</td>
+										</tr>
+										<tr>
+											<td>Workshop Energia e Inovação</td>
+											<td>14 às 20 horas</td>
+											<td>Laboratório de Química</td>
+										</tr>
+										<tr>
+											<td>Workshop: Saindo da informalidade: Como criar o seu MEI (Micro Empreendedor Individual)</td>
+											<td>9 às 15 horas</td>
+											<td>Ala de Prestação de Serviços</td>
+										</tr>
+										<tr>
+											<td>Workshop: Como elaborar um bom currículo</td>
+											<td>9 às 15 horas</td>
+											<td>Ala de Prestação de Serviços</td>
+										</tr>
+										</tbody>
+									</table>
+
+									<!-- ARENA COMPETIÇÃO -->
+
+									<h3 id="agenda-competicao"><span class="icon fa-trophy"></span> ARENA COMPETIÇÃO</h3>
+									<ul class="actions">
+										<li><button id="show-competicao6" class="button special small">Dia 6</button></li>
+										<li><button id="show-competicao7" class="button small">Dia 7</button></li>
+									</ul>
+
+									<table id="competicao6" class="alt">
+										<thead>
+										<tr>
+											<th width="65%">Atividade | Dia 6</th>
+											<th width="15%">Horário</th>
+											<th width="20%">Local</th>
+										</tr>
+										</thead>
+										<tbody>
+										<tr>
+											<td>Competição de Matemática</td>
+											<td>14 horas</td>
+											<td>Tablado</td>
+										</tr>
+										<tr>
+											<td>Competição deRobótica</td>
+											<td>15 horas</td>
+											<td>Tablado</td>
+										</tr>
+										<tr>
+											<td>Competição Feira de Ciências</td>
+											<td>9 horas</td>
+											<td>Tablado</td>
+										</tr>
+										</tbody>
+									</table>
+
+									<table id="competicao7" class="alt">
+										<thead>
+										<tr>
+											<th width="65%">Atividade | Dia 7</th>
+											<th width="15%">Horário</th>
+											<th width="20%">Local</th>
+										</tr>
+										</thead>
+										<tbody>
+										<tr>
+											<td>Competição de Jogos Digitais</td>
+											<td>9 às 17 horas</td>
+											<td>Tablado</td>
+										</tr>
+										</tbody>
+									</table>
+
+
+									<!-- ARENA KIDS -->
+
+									<h3 id="agenda-kids"><span class="icon fa-child"></span> ARENA KIDS</h3>
+									<ul class="actions">
+										<li><button id="show-kids6" class="button special small">Dia 6</button></li>
+										<li><button id="show-kids7" class="button small">Dia 7</button></li>
+									</ul>
+
+									<table id="kids6" class="alt">
+										<thead>
+										<tr>
+											<th width="65%">Atividade | Dia 6</th>
+											<th width="15%">Horário</th>
+											<th width="20%">Local</th>
+										</tr>
+										</thead>
+										<tbody>
+										<tr>
+											<td>Exposição de Brinquedos terapêuticos - Projeto Acadêmico</td>
+											<td>9 às 21 horas</td>
+											<td>Stands de Exposição</td>
+										</tr>
+										<tr>
+											<td>Exposição de Livro Infantil</td>
+											<td>9 às 21 horas</td>
+											<td>Stands de Exposição</td>
+										</tr>
+										<tr>
+											<td>Contação de História</td>
+											<td>9 às 21 horas</td>
+											<td>Stands de Exposição</td>
+										</tr>
+										<tr>
+											<td>Lançamento do Livro Book Tour</td>
+											<td>9 às 21 horas</td>
+											<td>Stands de Exposição</td>
+										</tr>
+										<tr>
+											<td>Atividades Lúdicas e Recreativas</td>
+											<td>9 às 21 horas</td>
+											<td>Área externa da Arena</td>
+										</tr>
+										<tr>
+											<td>Projeto Siri Cascudo: Reaproveitamento de Residuos</td>
+											<td>9 às 21 horas</td>
+											<td>Stands de Exposição</td>
+										</tr>
+										<tr>
+											<td>Oficina: Pequenos Arquitetos</td>
+											<td>9 às 21 horas</td>
+											<td>Stands de Exposição</td>
+										</tr>
+										<tr>
+											<td>Oficina: Pequenos Arquitetos</td>
+											<td>9 às 21 horas</td>
+											<td>Stands de Exposição</td>
+										</tr>
+										</tbody>
+									</table>
+
+									<table id="kids7" class="alt">
+										<thead>
+										<tr>
+											<th width="65%">Atividade | Dia 7</th>
+											<th width="15%">Horário</th>
+											<th width="20%">Local</th>
+										</tr>
+										</thead>
+										<tbody>
+										<tr>
+											<td>Exposição de Brinquedos terapêuticos - Projeto Acadêmico</td>
+											<td>9 às 21 horas</td>
+											<td>Stands de Exposição</td>
+										</tr>
+										<tr>
+											<td>Exposição de Livro Infantil</td>
+											<td>9 às 21 horas</td>
+											<td>Stands de Exposição</td>
+
+										</tr>
+										<tr>
+											<td>Contação de História</td>
+											<td>9 às 21 horas</td>
+											<td>Stands de Exposição</td>
+										</tr>
+										<tr>
+											<td>Lançamento do Livro Book Tour</td>
+											<td>9 às 21 horas</td>
+											<td>Stands de Exposição</td>
+
+										</tr>
+										<tr>
+											<td>Atividades Lúdicas e Recreativas</td>
+											<td>9 às 21 horas</td>
+											<td>Área externa da Arena</td>
+
+										</tr>
+										<tr>
+											<td>Projeto Siri Cascudo: Reaproveitamento de Residuos</td>
+											<td>9 às 21 horas</td>
+											<td>Stands de Exposição</td>
+
+										</tr>
+										</tbody>
+									</table>
+
+								</div>
+							</div>
+						</section>
+
+
+						<section id="parceiros" class="wrapper alt style-white">
+							<div class="inner">
+								<h2 class="major">Parceiros</h2>
+
+								<div class="box alt">
+									<div class="row uniform store">
+										<div class="4u"><a href="https://www.ucl.br/"><span class="image fit"><img src="images/parceiros_ucl.jpg"></span></a></div>
+										<div class="4u"><a href="https://www.victoryisland.com.br"><span class="image fit"><img src="images/parceiros_victor.png"></span></a></div>
+										<div class="4u$"><a href="https://www.ucl.br/"><span class="image fit"><img src="images/parceiros_dce.jpg"></span></a></div>
+									</div>
+								</div>
+							</div>
+						</section>
+
+					</section>
+
+				<!-- Footer -->
+					<section id="footer">
+
+						<div class="inner" id="contato">
+
+							<h2 class="major">Entre em Contato</h2>
+							<ul class="contact">
+								<li class="fa-home">
+									Faculdade UCL<br />
+									Campus UCL Manguinhos<br />
+									Rod. ES 010, km 6 | Manguinhos, Serra – ES<br />
+									CEP: 29173-087
+								</li>
+								<li class="fa-phone">(27) 3434-0100</li>
+								<li class="fa-envelope"><a href="maito:mostra@ucl.br">mostra@ucl.br</a></li>
+							</ul>
+
+							<!--<form method="post" action="#">
+								<div class="field">
+									<label for="name">Name</label>
+									<input type="text" name="name" id="name" />
+								</div>
+								<div class="field">
+									<label for="email">Email</label>
+									<input type="email" name="email" id="email" />
+								</div>
+								<div class="field">
+									<label for="message">Message</label>
+									<textarea name="message" id="message" rows="4"></textarea>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form>
+							<ul class="contact">
+								<li class="fa-home">
+									Untitled Inc<br />
+									1234 Somewhere Road Suite #2894<br />
+									Nashville, TN 00000-0000
+								</li>
+								<li class="fa-phone">(000) 000-0000</li>
+								<li class="fa-envelope"><a href="#">information@untitled.tld</a></li>
+								<li class="fa-twitter"><a href="#">twitter.com/untitled-tld</a></li>
+								<li class="fa-facebook"><a href="#">facebook.com/untitled-tld</a></li>
+								<li class="fa-instagram"><a href="#">instagram.com/untitled-tld</a></li>
+							</ul>
+							-->
+						</div>
+						<iframe id="mapa" src="https://www.google.com/maps/d/embed?mid=1fi_tcyD02BEBXOV-93L05sCecsA" width="100%" height="480"></iframe>
+						<!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3744.3498554588127!2d-40.22239268527457!3d-20.202777952066306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb81c230737b4e3%3A0xe51b29f15d828b8f!2sFaculdade+UCL+(Campus+Manguinhos)!5e0!3m2!1spt-BR!2sbr!4v1501811767866" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>-->
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
