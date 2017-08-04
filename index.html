@@ -18,9 +18,9 @@
 
 	<script type="text/javascript">
 		jQuery(document).ready(function($) {
-			$("a").click(function(event){
+			$(".scroll").click(function(event){
 				event.preventDefault();
-				$('html,body').animate({scrollTop:$(this.hash).offset().top - 80}, 700);
+				$('html,body').animate({scrollTop:$(this.hash).offset().top - 55}, 700);
 			});
 		});
 	</script>
@@ -181,13 +181,13 @@
 		<div class="inner">
 			<h2>Menu</h2>
 			<ul class="links">
-				<li><a href="#7mostra">7ª Mostra UCL</a></li>
-				<li><a href="#uclgo">UCL GO!</a></li>
-				<li><a href="#agenda">Agenda</a></li>
-				<li><a href="#arenas">Arenas</a></li>
-				<li><a href="#parceiros">Parceiros</a></li>
-				<li><a href="#mapa">Mapa do Evento</a></li>
-				<li><a href="#contato">Contato</a></li>
+				<li><a class="scroll" href="#7mostra">7ª Mostra UCL</a></li>
+				<li><a class="scroll" href="#uclgo">UCL GO!</a></li>
+				<li><a class="scroll" href="#agenda">Agenda</a></li>
+				<li><a class="scroll" href="#arenas">Arenas</a></li>
+				<li><a class="scroll" href="#parceiros">Parceiros</a></li>
+				<li><a class="scroll" href="#mapa">Mapa do Evento</a></li>
+				<li><a class="scroll" href="#contato">Contato</a></li>
 			</ul>
 			<a href="#" class="close">Close</a>
 		</div>
@@ -197,8 +197,14 @@
 	<section id="banner">
 		<div class="inner">
 			<div class="row">
-				<div class="8u 12u(medium) logo"><img src="images/logo.png" alt="" /></span></div>
-				<div class="4u 12u$(medium) logo"><a href="#agenda" class="button">CONFIRA A PROGRAMAÇÃO</a></div>
+				<div class="4u 12u(medium) logo"><img src="images/logo.png" alt="" /></span></div>
+				<div class="8u 12u$(medium) logo">
+
+					<ul class="actions">
+						<li><a href="#agenda" class="button special">Faça sua Pré-Inscrição</a></li>
+						<li><a href="#agenda" class="button scroll">CONFIRA A PROGRAMAÇÃO</a></li>
+					</ul>
+				</div>
 			</div>
 
 			<h2>7ª Mostra UCL<br>06 e 07 de Outubro - 2017</h2>
@@ -257,11 +263,11 @@
 						<div class="row">
 							<div class="12u$(medium)">
 								<ul>
-									<li><a href="#cultura">Arena Criativa da Cultura</a></li>
-									<li><a href="#negocios">Arena Criativa de Negócios</a></li>
-									<li><a href="#academica">Arena Criativa Acadêmica</a></li>
-									<li><a href="#competicao">Arena Criativa de Competições</a></li>
-									<li><a href="#kids">Arena Criativa Kids</a></li>
+									<li><a class="scroll" href="#cultura">Arena Criativa da Cultura</a></li>
+									<li><a class="scroll" href="#negocios">Arena Criativa de Negócios</a></li>
+									<li><a class="scroll" href="#academica">Arena Criativa Acadêmica</a></li>
+									<li><a class="scroll" href="#competicao">Arena Criativa de Competições</a></li>
+									<li><a class="scroll" href="#kids">Arena Criativa Kids</a></li>
 								</ul>
 							</div>
 						</div>
@@ -393,7 +399,7 @@
 
 						<hr>
 						<h3>Agenda</h3>
-						<a href="#agenda-cultura" class="special">Confira a programação da Arena Criativa da Cultura</a>
+						<a href="#agenda-cultura" class="special scroll">Confira a programação da Arena Criativa da Cultura</a>
 					</div>
 				</div>
 			</div>
@@ -428,7 +434,7 @@
 
 						<hr>
 						<h3>Agenda</h3>
-						<a href="#agenda-negocios" class="special">Confira a programação da Arena Criativa de Negócios</a>
+						<a href="#agenda-negocios" class="special scroll">Confira a programação da Arena Criativa de Negócios</a>
 					</div>
 				</div>
 			</div>
@@ -486,7 +492,7 @@
 
 						<hr>
 						<h3>Agenda</h3>
-						<a href="#agenda-competicao" class="special">Arena Criativa de Competições</a>
+						<a href="#agenda-competicao" class="special scroll">Arena Criativa de Competições</a>
 					</div>
 				</div>
 			</div>
@@ -513,7 +519,7 @@
 
 						<hr>
 						<h3>Agenda</h3>
-						<a href="#agenda-academica" class="special">Confira a programação da Arena Criativa Acadêmica</a>
+						<a href="#agenda-academica" class="special scroll">Confira a programação da Arena Criativa Acadêmica</a>
 					</div>
 				</div>
 			</div>
@@ -558,7 +564,7 @@
 
 						<hr>
 						<h3>Agenda</h3>
-						<a href="#agenda-kids" class="special">Confira a programação da Arena Criativa Kids</a>
+						<a href="#agenda-kids" class="special scroll">Confira a programação da Arena Criativa Kids</a>
 
 
 					</div>
