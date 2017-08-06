@@ -10,9 +10,11 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="assets/css/main.css?ver=1" />
 	<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 	<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+
+	<link href="images/favicon.png" rel="shortcut icon" type="image/png">
 
 	<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js'></script>
 
@@ -131,10 +133,15 @@
 				$('#show-kids6').removeClass('special');
 			});
 
-
+			/* Sessão */
 			$("#show-arena-cultura").click(function(){
 				$("#show-arena-cultura").hide();
 				$("#arena-cultura").show();
+			});
+
+			$("#hide-arena-cultura").click(function(){
+				$("#show-arena-cultura").show();
+				$("#arena-cultura").hide();
 			});
 
 			$("#show-arena-negocios").click(function(){
@@ -142,9 +149,19 @@
 				$("#arena-negocios").show();
 			});
 
+			$("#hide-arena-negocios").click(function(){
+				$("#show-arena-negocios").show();
+				$("#arena-negocios").hide();
+			});
+
 			$("#show-arena-academica").click(function(){
 				$("#show-arena-academica").hide();
 				$("#arena-academica").show();
+			});
+
+			$("#hide-arena-academica").click(function(){
+				$("#show-arena-academica").show();
+				$("#arena-academica").hide();
 			});
 
 			$("#show-arena-competicao").click(function(){
@@ -152,16 +169,26 @@
 				$("#arena-competicao").show();
 			});
 
+			$("#hide-arena-competicao").click(function(){
+				$("#show-arena-competicao").show();
+				$("#arena-competicao").hide();
+			});
+
 			$("#show-arena-kids").click(function(){
 				$("#show-arena-kids").hide();
 				$("#arena-kids").show();
+			});
+
+			$("#hide-arena-kids").click(function(){
+				$("#show-arena-kids").show();
+				$("#arena-kids").hide();
 			});
 
 		});
 	</script>
 
 </head>
-<body>
+<body id="top">
 <!-- Link Ancoras -->
 
 
@@ -170,7 +197,16 @@
 
 	<!-- Header -->
 	<header id="header" class="alt">
-		<h1><a href="index.html"><img class="logo-peq" src="images/logo_peq.png" alt="" /></a></h1>
+		<h1><a class="scroll" href="#top"><img class="logo-peq" src="images/logo.png" alt="" /><img class="logo-peq-text" src="images/logo_peq.png" alt="" /></a>
+			<ul class="submenu actions">
+				<li><a class="scroll" href="#cultura">Cultura</a></li>
+				<li><a class="scroll" href="#academica">Acadêmica</a></li>
+				<li><a class="scroll" href="#competicao">Competições</a></li>
+				<li><a class="scroll" href="#negocios">Negócios</a></li>
+				<li><a class="scroll" href="#kids">Kids</a></li>
+			</ul>
+		</h1>
+
 		<nav>
 			<a href="#menu">Menu</a>
 		</nav>
@@ -186,8 +222,8 @@
 				<li><a class="scroll" href="#agenda">Agenda</a></li>
 				<li><a class="scroll" href="#arenas">Arenas</a></li>
 				<li><a class="scroll" href="#parceiros">Parceiros</a></li>
-				<li><a class="scroll" href="#mapa">Mapa do Evento</a></li>
 				<li><a class="scroll" href="#contato">Contato</a></li>
+				<li><a class="scroll" href="#mapa">Mapa do Evento</a></li>
 			</ul>
 			<a href="#" class="close">Close</a>
 		</div>
@@ -204,6 +240,15 @@
 						<li><a href="https://goo.gl/forms/DLWRiHJ6I5TvczAO2" target="_blank" class="button special">Faça sua Pré-Inscrição</a></li>
 						<li><a href="#agenda" class="button scroll">CONFIRA A PROGRAMAÇÃO</a></li>
 					</ul>
+					<div class="row uniform icon-menu">
+						<div class="2u 2u(medium)"><h3>ARENAS:</h3></div>
+						<div class="1u 2u(medium)"><a class="scroll" title="Arena Cultural" href="#cultura"><img src="images/cultura.jpg" alt="" /></a></div>
+						<div class="1u 2u(medium)"><a class="scroll" title="Arena Acadêmica" href="#academica"><img src="images/academico2.jpg" alt="" /></a></div>
+						<div class="1u 2u(medium)"><a class="scroll" title="Arena Competição" href="#competicao"><img src="images/competicao.jpg" alt="" /></a></div>
+						<div class="1u 2u(medium)"><a class="scroll" title="Arena de Negócios" href="#negocios"><img src="images/negocios.jpg" alt="" /></a></div>
+						<div class="1u 2u(medium)$"><a class="scroll" title="Arena Kids" href="#kids"><img src="images/kids.jpg" alt="" /></a></div>
+					</div>
+
 				</div>
 			</div>
 
@@ -264,9 +309,9 @@
 							<div class="12u$(medium)">
 								<ul>
 									<li><a class="scroll" href="#cultura">Arena Criativa da Cultura</a></li>
-									<li><a class="scroll" href="#negocios">Arena Criativa de Negócios</a></li>
 									<li><a class="scroll" href="#academica">Arena Criativa Acadêmica</a></li>
 									<li><a class="scroll" href="#competicao">Arena Criativa de Competições</a></li>
+									<li><a class="scroll" href="#negocios">Arena Criativa de Negócios</a></li>
 									<li><a class="scroll" href="#kids">Arena Criativa Kids</a></li>
 								</ul>
 							</div>
@@ -284,7 +329,6 @@
 				<p>Para assegurar uma participação ativa e colaborativa, as atividades serão gerenciadas pelo aplicativo UCL GO!, uma ferramenta desenvolvida por pesquisadores e alunos da instituição que permitirá aos participantes interagirem com o evento a cada momento, a cada instante em qualquer lugar. O aplicativo pontuará o participante de acordo com sua interação na mostra e iniciará um ranking em três segmentos distintos: empresas, instituições de ensino e visitantes.</p>
 				<p>Haverá premiações para os três primeiros vencedores das categorias de instituições de ensino e empresas. Também serão premiados os 20 primeiros participantes do ranking.</p>
 				<h3>Como me cadastro no UCL GO! ?</h3>
-
 
 				<div align="center">
 					<ul class="actions">
@@ -369,7 +413,6 @@
 
 
 		<!-- One -->
-
 		<section id="arenas" class="wrapper alt spotlight style-purple">
 			<div id="cultura" class="inner">
 				<a href="#" class="image"><img src="images/cultura.jpg" alt="" /></a>
@@ -377,7 +420,7 @@
 					<h2 class="major">Arena Criativa da Cultura</h2>
 					<p>Arena Criativa da Cultura é uma oportunidade de ver , conhecer e vivenciar diferentes culturas que estão presentes no Espírito Santo através da batalhas de bandas, Bazar, apresentação de artes marciais, de dança e feira de food trucks. Também é um momento para melhorar a saúde através de momentos de ginástica funcional.</p>
 					<p>Tudo isso enquanto você aproveita o conhecimento, as competições e os negócios.</p>
-					<button id="show-arena-cultura" class="">Saiba mais</button>
+					<a href="#show-arena-cultura" id="show-arena-cultura" class="scroll button icon fa-chevron-down">Saiba mais</a>
 
 					<div id="arena-cultura" style="display: none;">
 						<hr>
@@ -394,12 +437,16 @@
 
 						<hr>
 						<h3>Batalha de Bandas</h3>
-						<p>Muita música boa está por vir!</p>
+						<p>A batalha vai ocorrer no dia 7 de outubro na arena cultural das 16h as 22hs, com várias bandas participantes, tocando estilos diversos. Cada banda terá até uma hora de apresentação para que o público presente possa votar nas melhores. serão premiadas as 3 primeiras colocadas. a banda vencedora terá o direito de realizar mais uma hora de apresentação na ultima hora do evento.</p>
 						<a href="https://goo.gl/forms/auvVUiqI7yUr3aRu2" class="button" target="_blank">Faça sua Inscrição para a Batalha de Bandas</a>
 
 						<hr>
+
 						<h3>Agenda</h3>
-						<a href="#agenda-cultura" class="special scroll">Confira a programação da Arena Criativa da Cultura</a>
+						<ul class="actions">
+							<li><a href="#agenda-cultura" class="button special scroll icon fa-calendar-o">Confira a programação da Arena Criativa da Cultura</a></li>
+						</ul>
+						<a href="#cultura" id="hide-arena-cultura" class="button scroll icon fa-chevron-up">Recolher</a>
 					</div>
 				</div>
 			</div>
@@ -407,41 +454,35 @@
 
 		<!-- Two -->
 		<section id="two" class="wrapper spotlight style-purple2">
-			<div id="negocios" name="negocios" class="inner">
-				<a href="#" class="image"><img src="images/negocios.jpg" alt="" /></a>
+			<div id="academica" class="inner">
+				<a href="#" class="image"><img src="images/academico2.jpg" alt="" /></a>
 				<div class="content">
-					<h2 class="major">Arena Criativa de Negócios</h2>
-					<p>A Arena Criativa de Negócios é uma área para empresas que desejam se aproximar de seus clientes e fazer parcerias com outras empresas. Esta Arena contempla atividades de empreendedorismo, rodadas de negócios, exposição de produtos, serviços, atividades para aprimorar sua equipe e a forma de encarar problemas.</p>
-					<p>De forma criativa, cativante e marcante é uma grande oportunidade que nenhum empresário gostaria de perder!</p>
-					<button id="show-arena-negocios" class="">Saiba mais</button>
+					<h2 class="major">Arena Criativa Acadêmica</h2>
+					<p>A Arena Criativa Acadêmica abarca projetos de alunos e pesquisadores da instituição, entre eles projetos integradores, projetos e jornada de iniciação científica, palestras, workshops e uma ala Kids com projetos de responsabilidade social.</p>
+					<a href="#show-arena-academica" id="show-arena-academica" class="scroll button icon fa-chevron-down">Saiba mais</a>
 
-					<div id="arena-negocios" style="display: none;">
+					<div id="arena-academica" style="display: none;">
 						<hr>
-						<h3>Bazar</h3>
-						<p>Está com alguma coisa parada em casa? Que tal desapegar?</p>
-
-						<hr>
-						<h3>Café com Negócios</h3>
-						<p>Aproveite este momento para empreender mais e ampliar seus negócios, enquanto desfruta daquele cafézinho.</p>
+						<h3>Jornada de Iniciação Científica</h3>
+						<p>Parte importante da tenda acadêmica onde os alunos apresentarão o resultado de suas pesquisas ao público.</p>
 
 						<hr>
-						<h3>Troca de Cartões</h3>
-						<p>Se você tem soluções, algém possuí necessidades. Que tal juntar ambos num encontro só?</p>
-
-						<hr>
-						<h3>Pré-cadastro de Empresas</h3>
-						<a href="https://goo.gl/forms/rVLE9wTbiBDCbNH22" class="button" target="_blank">Faça a pré-inscrição da sua Empresa ou Instituição de Ensino.</a>
+						<h3>Projetos Interdisciplinares</h3>
+						<p>Uma área com vários projetos desenvolvidos pelos alunos durante os vários cursos da UCL. Abrangem as áreas de engenharias, design, sistemas de informação e muitas outras.</p>
 
 						<hr>
 						<h3>Agenda</h3>
-						<a href="#agenda-negocios" class="special scroll">Confira a programação da Arena Criativa de Negócios</a>
+						<ul class="actions">
+							<li><a href="#agenda-academica" class="button special scroll icon fa-calendar-o">Confira a programação da Arena Criativa Acadêmica</a></li>
+						</ul>
+						<a href="#academica" id="hide-arena-academica" class="button scroll icon fa-chevron-up">Recolher</a>
+
 					</div>
 				</div>
 			</div>
 		</section>
 
 		<!-- Three -->
-
 		<section id="three" class="wrapper alt spotlight style-purple">
 			<div id="competicao" class="inner">
 				<a href="#" class="image"><img src="images/competicao.jpg" alt="" /></a>
@@ -449,7 +490,7 @@
 					<h2 class="major">Arena Criativa de Competições</h2>
 					<p>A Arena Criativa de Competições é uma área onde escolas podem trazer seus alunos e suas pesquisas para serem expostas e testadas. Também um espaço para instigar os participantes da Mostra de Inovação UCL a desafiarem seus conhecimentos em atividades variadas como desafios envolvendo robótica, esportes eletrônicos, competições Maker,  entre outros.</p>
 					<p>Com o intuito de tornar o conhecimento de forma prática e divertida, desafiamos você a deixar sua marca neste evento.</p>
-					<button id="show-arena-competicao" class="">Saiba mais</button>
+					<a href="#show-arena-competicao" id="show-arena-competicao" class="scroll button icon fa-chevron-down">Saiba mais</a>
 
 					<div id="arena-competicao" style="display: none;">
 						<hr>
@@ -484,61 +525,72 @@
 						</ol>
 						<h4>OBS.: Não esqueça de ler as regras <a href="https://docs.google.com/a/ucl.br/document/d/1zw2plwh5g2vesvSVZDxjbpB8pJihR1fSNVaPcnwmDcI/edit?usp=sharing" target="_blank">AQUI!</a></h4>
 
-
 						<hr>
 						<h3>Pré-cadastro de instituições de ensino</h3>
 						<a href="https://goo.gl/forms/rVLE9wTbiBDCbNH22" class="button" target="_blank">Faça a pré-inscrição da sua Instituição de Ensino.</a>
-
-
 						<hr>
 						<h3>Agenda</h3>
-						<a href="#agenda-competicao" class="special scroll">Arena Criativa de Competições</a>
+						<ul class="actions">
+							<li><a href="#agenda-competicao" class="button special scroll icon fa-calendar-o">Confira a programação da Arena Criativa de Competições</a></li>
+						</ul>
+						<a href="#competicao" id="hide-arena-competicao" class="button scroll icon fa-chevron-up">Recolher</a>
 					</div>
 				</div>
 			</div>
 		</section>
-
 
 		<!-- Four -->
 		<section id="four" class="wrapper spotlight style-purple2">
-			<div id="academica" class="inner">
-				<a href="#" class="image"><img src="images/academico.jpg" alt="" /></a>
+			<div id="negocios" name="negocios" class="inner">
+				<a href="#" class="image"><img src="images/negocios.jpg" alt="" /></a>
 				<div class="content">
-					<h2 class="major">Arena Criativa Acadêmica</h2>
-					<p>A Arena Criativa Acadêmica abarca projetos de alunos e pesquisadores da instituição, entre eles projetos integradores, projetos e jornada de iniciação científica, palestras, workshops e uma ala Kids com projetos de responsabilidade social.</p>
-					<button id="show-arena-academica" class="">Saiba mais</button>
+					<h2 class="major">Arena Criativa de Negócios</h2>
+					<p>A Arena Criativa de Negócios é uma área para empresas que desejam se aproximar de seus clientes e fazer parcerias com outras empresas. Esta Arena contempla atividades de empreendedorismo, rodadas de negócios, exposição de produtos, serviços, atividades para aprimorar sua equipe e a forma de encarar problemas.</p>
+					<p>De forma criativa, cativante e marcante é uma grande oportunidade que nenhum empresário gostaria de perder!</p>
+					<a href="#show-arena-negocios" id="show-arena-negocios" class="scroll button icon fa-chevron-down">Saiba mais</a>
 
-					<div id="arena-academica" style="display: none;">
+					<div id="arena-negocios" style="display: none;">
 						<hr>
-						<h3>Jornada de Iniciação Científica</h3>
-						<p>Parte importante da tenda acadêmica onde os alunos apresentarão o resultado de suas pesquisas ao público.</p>
-
-						<hr>
-						<h3>Projetos Interdisciplinares</h3>
-						<p>Uma área com vários projetos desenvolvidos pelos alunos durante os vários cursos da UCL. Abrangem as áreas de engenharias, design, sistemas de informação e muitas outras.</p>
+						<h3>Bazar</h3>
+						<p>Está com alguma coisa parada em casa? Que tal desapegar?</p>
 
 						<hr>
+						<h3>Café com Negócios</h3>
+						<p>Aproveite este momento para empreender mais e ampliar seus negócios, enquanto desfruta daquele cafézinho.</p>
+
+						<hr>
+						<h3>Troca de Cartões</h3>
+						<p>Se você tem soluções, algém possuí necessidades. Que tal juntar ambos num encontro só?</p>
+
+						<hr>
+						<h3>Pré-cadastro de Empresas</h3>
+						<a href="https://goo.gl/forms/rVLE9wTbiBDCbNH22" class="button" target="_blank">Faça a pré-inscrição da sua Empresa ou Instituição de Ensino.</a>
+
+						<hr>
+
 						<h3>Agenda</h3>
-						<a href="#agenda-academica" class="special scroll">Confira a programação da Arena Criativa Acadêmica</a>
+						<ul class="actions">
+							<li><a href="#agenda-negocios" class="button special scroll icon fa-calendar-o">Confira a programação da Arena Criativa de Negócios</a></li>
+						</ul>
+						<a href="#negocios" id="hide-arena-negocios" class="button scroll icon fa-chevron-up">Recolher</a>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<!-- Five -->
 
+		<!-- Five -->
 		<section id="five" class="wrapper alt spotlight style-purple">
 			<div id="kids" class="inner">
 				<a href="#" class="image"><img src="images/kids.jpg" alt="" /></a>
 				<div class="content">
 					<h2 class="major">Arena Criativa Kids</h2>
 					<p>A Arena Kids é um espaço que busca oportunizar às crianças participantes da 7ª Mostra UCL,  o contato com brinquedos terapêuticos  que estimulam o desenvolvimento cognitivo e motor. Além disso, as crianças poderão explorar o mundo da leitura por meio da exposição de livros infantis, bem como exercitar a responsabilidade social no cantinho do projeto siri cascudo, um projeto que explora o reaproveitamento de resíduos pesqueiros.</p>
-					<button id="show-arena-kids" class="">Saiba mais</button>
+					<a href="#show-arena-kids" id="show-arena-kids" class="scroll button icon fa-chevron-down">Saiba mais</a>
 
 					<div id="arena-kids" style="display: none;">
 						<hr>
 						<h3>Brinquedos Terapeuticos</h3>
-
 						<ul>
 							<li>Robô esférico</li>
 							<li>Quadro sensorial</li>
@@ -547,28 +599,25 @@
 							<li>Ursinho terapêutico</li>
 							<li>Jogo da velha com braço robótico</li>
 						</ul>
-
-
 						<hr>
 						<h3>PROJETO SIRI CASCUDO</h3>
-
 						<hr>
 						<h3>LANÇAMENTO DO LIVRO BOOK TOUR</h3>
-
 						<hr>
 						<h3>EXPOSIÇÃO DE LIVROS INFANTIS</h3>
-
 						<hr>
 						<h3>BRINCADEIRAS E DESAFIOS DIVERTIDOS</h3>
-
-
 						<hr>
 						<h3>Agenda</h3>
-						<a href="#agenda-kids" class="special scroll">Confira a programação da Arena Criativa Kids</a>
-
+						<ul class="actions">
+							<li><a href="#agenda-kids" class="button special scroll icon fa-calendar-o">Confira a programação da Arena Criativa Kids</a></li>
+						</ul>
+						<a href="#kids" id="hide-arena-kids" class="button scroll icon fa-chevron-up">Recolher</a>
 
 					</div>
 				</div>
+			</div>
+
 		</section>
 
 		<!-- AGENDA -->
@@ -577,6 +626,19 @@
 			<div class="inner">
 				<h2 class="major">Agenda</h2>
 				<div class="table-wrapper">
+
+					<!--
+					<div align="center">
+						<ul class="actions">
+							<li><button class="cadastro-link" id="show-empresa">CULTURAL</button></li>
+							<li><button class="cadastro-link" id="show-instituicao">NEGÓCIOS</button></li>
+							<li><button class="cadastro-link" id="show-visitante">ACADÊMICA</button></li>
+							<li><button class="cadastro-link" id="show-visitante">COMPETIÇÃO</button></li>
+							<li><button class="cadastro-link" id="show-aluno">KIDS</button></li>
+						</ul>
+					</div>
+
+					-->
 
 					<!-- ARENA CULTURAL -->
 
@@ -601,7 +663,7 @@
 							<td>Palco</td>
 						</tr>
 						<tr>
-							<td>Apresentação da Banda The professor</td>
+							<td>Apresentação da Banda The Professors</td>
 							<td>21 horas</td>
 							<td>Palco</td>
 						</tr>
@@ -943,7 +1005,7 @@
 							<td>Tablado</td>
 						</tr>
 						<tr>
-							<td>Competição deRobótica</td>
+							<td>Competição de Robótica</td>
 							<td>15 horas</td>
 							<td>Tablado</td>
 						</tr>
