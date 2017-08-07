@@ -3121,12 +3121,37 @@ body.is-menu-visible #menu .inner {
 	}
 }
 
+.icon-menu td{
+	text-align: center;
+	font-size: 12px;
+	text-transform: uppercase;
+	font-weight: 400;
+	line-height: 0px;
+}
 
-
+.icon-menu tr{
+	border:0px;
+	background-color: transparent !important;
+}
 .icon-menu img{
-	max-width: 40px;
+	max-width: 60px;
 	border-radius: 100%;
 }
+
+@media screen and (max-width: 640px) {
+
+	.icon-menu img {
+		max-width: 40px;
+		border-radius: 100%;
+	}
+
+	.icon-menu td{
+		font-size: 10px;
+	}
+
+}
+
+
 
 .icon-menu .scroll{
 	text-decoration: none;
