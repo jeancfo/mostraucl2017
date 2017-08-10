@@ -3158,9 +3158,18 @@ body.is-menu-visible #menu .inner {
 	border-bottom: 0px;
 }
 
-.icon-menu .scroll:hover{
-
+.food .image{
+	border-radius: 0 !important;
 }
+
+
+.food .image img{
+	max-width: 200px;
+	max-height: 200px;
+	margin: 0 auto;
+	border-radius: 0 !important;
+}
+
 
 .store img {
 	max-width: 200px;
