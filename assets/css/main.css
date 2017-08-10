@@ -3152,7 +3152,6 @@ body.is-menu-visible #menu .inner {
 }
 
 
-
 .icon-menu .scroll{
 	text-decoration: none;
 	border-bottom: 0px;
@@ -3162,14 +3161,12 @@ body.is-menu-visible #menu .inner {
 	border-radius: 0 !important;
 }
 
-
 .food .image img{
-	max-width: 200px;
-	max-height: 200px;
+	max-width: 150px;
+	max-height: 150px;
 	margin: 0 auto;
 	border-radius: 0 !important;
 }
-
 
 .store img {
 	max-width: 200px;
@@ -4052,5 +4049,4 @@ body.is-loading #banner p {
 	#footer .inner {
 		padding: 2em 1.5em 0.1em 1.5em ;
 	}
-
 }
