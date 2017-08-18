@@ -3159,6 +3159,7 @@ body.is-menu-visible #menu .inner {
 
 .food .image{
 	border-radius: 0 !important;
+	width: auto !important;
 }
 
 .food .image img{
